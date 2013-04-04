@@ -31,7 +31,9 @@ var app = {
 
 };
 
-document.addEventListener("deviceready", onDeviceReady, false);
-function onDeviceReady() {
+//document.addEventListener("deviceready", onDeviceReady, false);
+//function onDeviceReady() {
+$(function() {
 	app.initialize();
 }
+);
