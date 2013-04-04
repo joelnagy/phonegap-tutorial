@@ -1,3 +1,4 @@
+// THE APP
 var app = {
 
     findByName: function() {
@@ -13,6 +14,19 @@ var app = {
         });
     },
 
+	// RENDER HOME SCREEN
+	renderHomeView: function() {
+	    var html =
+	            "<div class='header'><h1>Home</h1></div>" +
+	            "<div class='search-view'>" +
+	            "<input class='search-key'/>" +
+	            "<ul class='employee-list'></ul>" +
+	            "</div>"
+	    $('body').html(html);
+	    $('.search-key').on('keyup', $.proxy(this.findByName, this));
+	},
+
+	// UTILS
 	showAlert: function (message, title) {
 	    if (navigator.notification) {
 	        navigator.notification.alert(message, null, title, 'OK');
@@ -21,19 +35,19 @@ var app = {
 	    }
 	},
 
+	// INIT
     initialize: function() {
 		var self = this;
         this.store = new WebSqlStore(function() {
-		        self.showAlert('Store Initialized', 'Info');
+			self.renderHomeView();
+			///self.showAlert('Store Initialized', 'Info');
 		});
         $('.search-key').on('keyup', $.proxy(this.findByName, this));
     }
 
 };
 
-//document.addEventListener("deviceready", onDeviceReady, false);
-//function onDeviceReady() {
+// Run once the device or browser/page is ready
 $(function() {
 	app.initialize();
-}
-);
+});
