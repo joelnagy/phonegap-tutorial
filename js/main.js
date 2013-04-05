@@ -1,4 +1,4 @@
-var $_ = $_ || []; // iris stuff
+var $_ = $_ || {}; // iris stuff
 $_.logging = 'Trace';
 
 // THE APP
@@ -39,6 +39,7 @@ $_.log('init...');
 		this.employeeLiTpl = Handlebars.compile($("#employee-li-tpl").html());
 		
         $('.search-key').on('keyup', $.proxy(this.findByName, this));
+		delete initialize;
     }
 
 };
