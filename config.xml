@@ -20,13 +20,13 @@ Joel Nagy
 		<preference name="ios-statusbarstyle" value="black-transparent" />
 		<preference name="detect-data-types" value="true" />
 		<preference name="exit-on-suspend" value="false" />
-		<preference name="show-splash-screen-spinner" value="true" />
+		<preference name="show-splash-screen-spinner" value="false" />
 		<preference name="auto-hide-splash-screen" value="true" />
 		<preference name="disable-cursor" value="true" />
 		<preference name="android-minSdkVersion" value="7" />
 		<preference name="android-maxSdkVersion" value="0" />
 		<preference name="android-installLocation" value="null" />
-		<preference name="splash-screen-duration" value="100" />
+		<preference name="splash-screen-duration" value="0" />
 		<preference name="load-url-timeout" value="20000" />
 		<feature name="http://api.phonegap.com/1.0/camera"/>
 		<feature name="http://api.phonegap.com/1.0/contacts"/>
