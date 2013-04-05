@@ -2,8 +2,8 @@ html {
     height: 100%;
 }
 
-body {
-    font-family: source-sans-pro, serif;
+body, #Root {
+    font-family: source-sans-pro, sans-serif;
     font-size: 16px;
     margin: 0;
     padding: 0;
@@ -11,6 +11,7 @@ body {
     background-color: #fff;
     overflow: hidden;
     position: relative;
+	background: #FDEDD0;
 }
 
 .header {
