@@ -1,4 +1,4 @@
-var $_ = $_ || {}; // iris stuff
+var $_ = $_ || {}; // primary namespace
 $_.logging = 'Trace';
 
 // THE APP
