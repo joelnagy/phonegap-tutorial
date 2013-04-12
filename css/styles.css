@@ -14,13 +14,8 @@ body, #Root {
 }
 
 /* remove the yellowish highlight when clicking a link */
-a, a:active, a:link, a:visited, a:hover, a:focus {
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-	outline: 0;
-	border: none;
-}
-xxxa:active {
-	-webkit-user-modify: read-write-plaintext-only;
+.click {
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
 .scroll {
@@ -65,8 +60,9 @@ xxxa:active {
 .header-button {
     position: absolute;
     top: 6;
-    padding: 7px 5px;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    padding: 10px 10px;
+	margin: 3px 3px;
+/*    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); */ /* trying to add to .click class instead for all clickable elements */
     line-height: 1em;
 }
 
