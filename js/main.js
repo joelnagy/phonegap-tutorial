@@ -61,5 +61,12 @@ $_.log = function(msg) {
 
 // Run once the device or browser/page is ready
 $(function() {
+	document.addEventListener("offline", onOffline, false);
+
 	app.initialize();
+
+	function onOffline() {
+		app.showAlert('Please activate the Internet.');	
+	}
+	
 });
