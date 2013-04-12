@@ -13,8 +13,12 @@ body, #Root {
 	background: #FDEDD0 none;
 }
 
-a {
+/* remove the yellowish highlight when clicking a link */
+a, a:active, a:link, a:visited, a:hover, a:focus {
+	-webkit-user-modify: read-write-plaintext-only;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	outline: 0;
+	border: none;
 }
 
 .scroll {
