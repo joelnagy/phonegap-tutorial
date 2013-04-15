@@ -132,7 +132,8 @@ $(function() {
 
 	function onOffline() {
 		$_.log('Offline!');
-		//app.showAlert('Please activate the Internet.');	
+		//app.showAlert('Please activate the Internet.');
+		return false;
 	}
 	
 });
